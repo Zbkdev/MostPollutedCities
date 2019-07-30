@@ -1,0 +1,158 @@
+body {
+  overflow-x: hidden;
+}
+
+.zz {
+  margin-top: 100px;
+  display: grid;
+  z-index: 150;
+}
+
+label {
+  background: black;
+  color: white;
+  border-radius: 25px;
+  font-weight: 700;
+
+  padding: 20px;
+  margin: 0 5px;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(-10px);
+    -moz-transform: translatey(-10px);
+    -o-transform: translatey(-10px);
+    transform: translatey(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+    -moz-transform: translatey(0);
+    -o-transform: translatey(0);
+    transform: translatey(0);
+  }
+}
+@-moz-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(-10px);
+    -moz-transform: translatey(-10px);
+    -o-transform: translatey(-10px);
+    transform: translatey(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+    -moz-transform: translatey(0);
+    -o-transform: translatey(0);
+    transform: translatey(0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(-10px);
+    -moz-transform: translatey(-10px);
+    -o-transform: translatey(-10px);
+    transform: translatey(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+    -moz-transform: translatey(0);
+    -o-transform: translatey(0);
+    transform: translatey(0);
+  }
+}
+.in-down {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.container {
+  position: relative;
+  padding: 0 50px;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  background-image: url("/img/city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.radio-buttons {
+  display: flex;
+  align-items: flex-end;
+}
+
+.radio-buttons :first-child {
+  background: rgba(203, 156, 38, 0.4);
+}
+
+.radio-buttons :nth-child(2) {
+  background: rgba(105, 105, 105, 0.4);
+}
+
+.radio-buttons :nth-child(3) {
+  background: rgba(47, 79, 79, 0.4);
+}
+.radio-buttons :nth-child(4) {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+canvas {
+  z-index: 0;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+footer {
+  display: grid;
+  align-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100px;
+  z-index: 100;
+  background: #111;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    height: 100%;
+  }
+}

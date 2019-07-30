@@ -1,0 +1,21 @@
+input {
+  color: white;
+}
+
+.css-2613qy-menu {
+  z-index: 100 !important;
+}
+
+.MuiFormLabel-root,
+.css-1wa3eu0-placeholder,
+.css-1uccc91-singleValue {
+  color: white !important;
+}
+
+.MuiInput-underline:before {
+  border-color: white !important;
+}
+
+.css-1uccc91-singleValue {
+  overflow: visible !important;
+}

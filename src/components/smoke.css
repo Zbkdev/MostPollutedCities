@@ -1,0 +1,93 @@
+.smoke__section {
+  grid-row: 3 / 3;
+}
+
+.smoke {
+  position: absolute;
+  top: 70vh;
+  left: 34.5vw;
+  height: 4vw;
+  width: 4vw;
+  border-radius: 100%;
+  background-color: #5c5c5c;
+  filter: blur(16px);
+}
+
+.s {
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 100%;
+  background-color: #5c5c5c;
+  filter: blur(8px);
+  z-index: 99;
+  animation: smokex 1s 1s infinite;
+}
+
+.s:nth-child(1) {
+  animation: smokex 2s 1.5s infinite;
+}
+.s:nth-child(2) {
+  animation: smokex 2s 2s infinite;
+}
+.s:nth-child(3) {
+  animation: smokex 2s 2.5s infinite;
+}
+
+.smoke2 {
+  position: absolute;
+  top: 60vh;
+  left: 55.5vw;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 100%;
+  background-color: #5c5c5c;
+  filter: blur(22px);
+}
+
+.s2 {
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100%;
+  background-color: #5c5c5c;
+  filter: blur(8px);
+  z-index: 99;
+  animation: smokex 1s 1s infinite;
+}
+
+.s2:nth-child(1) {
+  animation: smokex 2s 1.5s infinite;
+}
+.s2:nth-child(2) {
+  animation: smokex 2s 2s infinite;
+}
+.s2:nth-child(3) {
+  animation: smokex 2s 2.5s infinite;
+}
+
+@keyframes smokex {
+  10% {
+    left: -1vw;
+  }
+  30% {
+    left: 1vw;
+  }
+  50% {
+    left: -1vw;
+  }
+  70% {
+    left: 1vw;
+  }
+  100% {
+    top: -10vw;
+    height: 8vw;
+    width: 8vw;
+    opacity: 0;
+    filter: blur(15px);
+  }
+}
