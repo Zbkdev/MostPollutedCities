@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Dependencies
+
+@material-ui/core
+react
+react-dom
+react-scripts
+react-select
+
 ## Available Scripts
 
 In the project directory, you can run:
